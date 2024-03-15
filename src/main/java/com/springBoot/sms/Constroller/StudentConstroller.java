@@ -42,7 +42,7 @@ public class StudentConstroller {
 		
 	}
 	
-	@GetMapping("/Delete/{id}")
+	@DeleteMapping("/Delete/{id}")
 	public void DeleteById(@PathVariable ("id") Long Id) {
 		studentService.deleteStudent(Id);
 	}
